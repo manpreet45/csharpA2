@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.HTML helper Controller</title>
+</head>
+<h2>HTML Helper Controller</h2>
+<table border="1">
+    <tr>
+        <td> Name</td>
+        <td> @Html.TextBox("Name")</td>
+    </tr>
+    <tr>
+        <td> Address</td>
+        <td> @Html.TextArea("Address")</td>
+    </tr>
+</table>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+

@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "View Page 2";
+}
+
+<h2> Customer </h2>
+@using (Html.BeginForm("SaveCustomer", "Demo", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                @Html.TextBox("Name")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address
+            </td>
+            <td>
+                @Html.TextBox("Address")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                City
+            </td>
+            <td>
+                @Html.TextBox("City")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mobile
+            </td>
+            <td>
+                @Html.TextBox("Mobile")
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
